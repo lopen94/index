@@ -3,85 +3,117 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="dist/css/index.css">
+	<link rel="stylesheet" href="../css/index.css">
 	<title>Document</title>
 </head>
 <body>
 	<div class="wrapper">
-		<nav>
-		<ul class="navigation-list">
-			<li class="navigation-list__item"><a href="tel:226666666">22 666 66 66</a></li>
-			<li class="navigation-list__item"><a href="#">Kontakt/Śledzenie Przesyłki</a></li>
-			<li class="navigation-list__item"><a href="#">Rejestracja</a></li>
-			<li class="navigation-list__item navigation-list__item--login"><a href="#">Logowanie</a></li>
-		</ul>
-		</nav>
+		<!-- T O P  N A V I G A T I O N -->
+		<nav class="top-nav">
+			<ul class="navigation-list">
+				<li class="navigation-list__item">
+					<a href="tel:226666666" class="navigation-list__link" aria-label="22. 666. 66. 66">
+						<span class="icon icon--phone" aria-hidden="true"></span>
+	                    <span class="visuallyhidden">Numer telefonu</span>22 666 66 66</a>
+				</li>
+				<li class="navigation-list__item">
+					<a href="#" class="navigation-list__link">Kontakt/Śledzenie Przesyłki</a>
+				</li>
+				<li class="navigation-list__item">
+					<a href="#" class="navigation-list__link">Rejestracja</a>
+				</li>
+				<li class="navigation-list__item navigation-list__item--login">
+					<a href="#" class="navigation-list__link">Logowanie</a>
+				</li>
+				<!-- S E A R C H  B O X -->
+				<li class="navigation-list__item" id="search-box">
+                    <span class="icon icon--search" aria-hidden="true"></span>
+                    <span class="visuallyhidden">Wyszukiwarka</span>
+	                <form method="get" id="search-box__input">
+	                	<input type="text" placeholder="Szukaj" aria-label="Szukaj">
+	                </form>
+            	</li>
+            	<li class="navigation-list__item">
+            		<a href="#" class="top-nav__link">
+            			<span class="icon icon--basket" aria-hidden="true"></span>
+            		</a>
+            	</li>
+            	<!-- CZEKAMY NA WIDOK KOSZYKA -->
+			</ul>
+		</nav> <!-- /.top-nav -->
+		<!-- P A G E  H E A D E R -->
 		<header class="header">
-			<a href="" class="header__link">
+			<a href="" class="header__link" title="Przejdź do strony głównej">
 				<figure class="header__image-wrapper">
 					<img src="" alt="" class="header__image logo">
 				</figure>
 			</a>
-			<a href="" class="header__link">
+			<a href="" class="header__link" title="Nasze nagrody">
 				<figure class="header__image-wrapper">
 					<img src="" alt="" class="header__image awards">
 				</figure>
 			</a>
-			<div class="header__postcodes-search">
-				<input type="tel" class="header__input">
-				<a href="#" class="header__link--search-pna">Wyszukaj kod pocztowy</a>
+			<div class="postcodes-search">
+				<input type="tel" id="postcode" class="postcodes-search__input">
+				<button type="button" id="postcode_reset" class="button button--rounded">
+					<span class="icon icon--close" aria-hidden="true"></span>
+					<span class="visuallyhidden">Wyczyść kod pocztowy</span>
+				</button>
+				<a href="#" class="postcodes-search__link">Wyszukaj kod pocztowy</a>
 			</div>
 		</header>
 		<div class="slider">
-			.slider__slide
-		</div>
+			<div class="slider__slide"></div>
+			<div class="slider__slide"></div>
+			<div class="slider__slide"></div>
+		</div> <!-- /.slider -->
 		<section class="categories">
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 1">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa1</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa1</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 2">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa2</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa2</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 3">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa3</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa3</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 4">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa4</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa4</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 5">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa5</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa5</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 6">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa6</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa6</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 7">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa7</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa7</figcaption>
 				</figure>
 			</a>
-			<a href="" class="categories__link">
+			<a href="" class="categories__link" title="title 8">
 				<figure class="categories__element">
-					<img src="" alt="" class="categories__image">
-					<figcaption>dupa8</figcaption>
+					<img src="" alt="" class="categories__image" aria-hidden="true">
+					<figcaption class="categories__image-title">dupa8</figcaption>
 				</figure>
 			</a>
 		</section> <!-- /.categories -->
@@ -93,36 +125,47 @@
 				</p>
 				<ul class="featured__list">
 					<li class="featured__item featured__item--message">
-						<h4 class="featured__header">dupa1</h4>
-						<p class="featured__caption">
-							Lorem ipsum dolor sit amet.
-						</p>
+						<a href="#" class="featured-item__link" aria-hidden="true">
+							<img src="" alt="" class="featured-item__image">
+							<h4 class="featured__header">dupa1</h4>
+							<p class="featured__caption">
+								Lorem ipsum dolor sit amet.
+							</p>
+						</a>
 					</li>
 					<li class="featured__item featured__item--guarantee">
-						<h4 class="featured__header">dupa2</h4>
-						<p class="featured__caption">
-							Lorem ipsum dolor sit amet.
-						</p>
+						<a href="#" class="featured-item__link" aria-hidden="true">
+							<img src="" alt="" class="featured-item__image">
+							<h4 class="featured__header">dupa2</h4>
+							<p class="featured__caption">
+								Lorem ipsum dolor sit amet.
+							</p>
+						</a>
 					</li>
 					<li class="featured__item featured__item--sms">
-						<h4 class="featured__header">dupa3</h4>
-						<p class="featured__caption">
-							Lorem ipsum dolor sit amet.
-						</p>
+						<a href="#" class="featured-item__link" aria-hidden="true">
+							<img src="" alt="" class="featured-item__image">
+							<h4 class="featured__header">dupa3</h4>
+							<p class="featured__caption">
+								Lorem ipsum dolor sit amet.
+							</p>
+						</a>
 					</li>
 				</ul>
 			</article>
-			<section class="featured__items">
+			<section class="featured-items">
 				<!-- 3  R E C O M M E N D E D  P R O D U C T S  H E R E -->
 				<!-- <figure class="featured__product"></figure> -->
-			</section> <!-- /.featured items -->
+			</section> <!-- /.featured-items -->
 		</section> <!-- /.featured -->
 		<secton class="products-section recommended">
 			<h3 class="products-section__header">Kwiaciarnia internetowa poleca</h3>
 			<!-- R E C O M M E N D E D  P R O D U C T S  H E R E -->
 		</secton> <!-- /.recommended -->
 		<secton class="products-section to-poland">
-			<h3 class="products-section__header">Kwiaciarnia internetowa poleca</h3>
+			<h3 class="products-section__header header-underline">
+				Kwiaciarnia internetowa poleca
+			</h3>
 			<!-- P R O D U C T S  T O  P O L A N D  H E R E -->
 		</secton> <!-- /.to-poland -->
 		<h3 class="gift-idea__header header-underline">Pomysł na prezent</h3>
