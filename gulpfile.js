@@ -1,12 +1,32 @@
+"use strict";
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const prefix = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('gulp-cssnano');
+
 
 gulp.task('sass', function () {
-  	gulp.src('./src/scss/**/*.scss')
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(prefix('last 2 versions'))
+  	gulp.src('./src/scss/main.scss')
+    .pipe(sass.sync({outputStyle: 'extended'}).on('error', sass.logError))
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixer({
+        "browsers":[
+            "ie >= 9",
+            "last 4 Edge versions",
+            "last 4 ff versions",
+            "last 4 Chrome versions",
+            "last 4 Opera versions",
+            "last 4 Safari versions",
+            "ie_mob >= 10",
+            "iOS >= 8",
+            "android >= 4.4",
+            "bb >= 10"
+        ]
+    }))
+    // .pipe(cssnano({zindex: false}))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/css'));
 });
 

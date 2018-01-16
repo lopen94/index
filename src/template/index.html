@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/main.css">
 	<title>Document</title>
 </head>
 <body>
@@ -26,11 +26,11 @@
 					<a href="#" class="navigation-list__link">Logowanie</a>
 				</li>
 				<!-- S E A R C H  B O X -->
-				<li class="navigation-list__item" id="search-box">
+				<li class="navigation-list__item">
                     <span class="icon icon--search" aria-hidden="true"></span>
                     <span class="visuallyhidden">Wyszukiwarka</span>
-	                <form method="get" id="search-box__input">
-	                	<input type="text" placeholder="Szukaj" aria-label="Szukaj">
+	                <form method="get" id="search-box">
+	                	<input class="search-box__input" type="text" placeholder="Szukaj" aria-label="Szukaj">
 	                </form>
             	</li>
             	<li class="navigation-list__item">
@@ -120,39 +120,24 @@
 		</section> <!-- /.categories -->
 		<section class="featured">
 			<article class="featured__article">
-				<h2 class="featured__header">dupa</h2>
+				<h2 class="visuallyhidden">dupa</h2>
 				<p class="featured__caption">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, dolorem!
 				</p>
-				<ul class="featured__list">
-					<li class="featured__item featured__item--message">
-						<a href="#" class="featured-item__link" aria-hidden="true">
-							<img src="" alt="" class="featured-item__image">
-							<h4 class="featured__header">dupa1</h4>
-							<p class="featured__caption">
-								Lorem ipsum dolor sit amet.
-							</p>
-						</a>
-					</li>
-					<li class="featured__item featured__item--guarantee">
-						<a href="#" class="featured-item__link" aria-hidden="true">
-							<img src="" alt="" class="featured-item__image">
-							<h4 class="featured__header">dupa2</h4>
-							<p class="featured__caption">
-								Lorem ipsum dolor sit amet.
-							</p>
-						</a>
-					</li>
-					<li class="featured__item featured__item--sms">
-						<a href="#" class="featured-item__link" aria-hidden="true">
-							<img src="" alt="" class="featured-item__image">
-							<h4 class="featured__header">dupa3</h4>
-							<p class="featured__caption">
-								Lorem ipsum dolor sit amet.
-							</p>
-						</a>
-					</li>
-				</ul>
+				<div class="featured__links">
+	                <figure class="featured__figure">
+	                    <img src="" alt="" class="featured__image" aria-hidden="true">
+	                    <figcaption class="featured__info"><strong>strong text</strong>rest of caption</figcaption>
+	                </figure>
+	                <figure class="featured__figure">
+	                    <img src="" alt="" class="featured__image" aria-hidden="true">
+	                    <figcaption class="featured__info"><strong>strong text</strong>rest of caption</figcaption>
+	                </figure>
+	                <figure class="featured__figure">
+	                    <img src="" alt="" class="featured__image" aria-hidden="true">
+	                    <figcaption class="featured__info"><strong>strong text</strong>rest of caption</figcaption>
+	                </figure>
+            	</div> <!-- /.featured__links -->
 			</article>
 			<section class="featured-items">
 				<!-- 3  R E C O M M E N D E D  P R O D U C T S  H E R E -->

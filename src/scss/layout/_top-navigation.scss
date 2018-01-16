@@ -1,15 +1,17 @@
 .top-nav {
 	background-color: red;
+	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 }
 .navigation-list__item {
 	display: inline-block;
-	&--tel {
+	margin-right: 15px;
 
-	}
-	&-- {
-		
-	}
+}
+.navigation-list__link {
+	color: #000;
+	text-decoration: none;
+	font-size: $nav_links;
 }

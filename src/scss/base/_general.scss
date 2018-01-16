@@ -1,0 +1,22 @@
+// visually hidden class from 
+// https://github.com/h5bp/html5-boilerplate/blob/f888d9611b1743d3f0fcb98956ca04fa22746315/dist/css/main.css#L135-L145
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    &:active, &:hover {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+        white-space: inherit;
+    }
+}

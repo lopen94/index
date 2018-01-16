@@ -75,7 +75,8 @@
         <div class="delivery">
             <label for="postcode" class="delivery__label"></label>
             <input type="text" id="postcode" class="delivery__input">
-            <button type="button" id="postcode_reset" class="button button--rounded"><span class="icon icon--close" aria-hidden="true"></span><span class="visuallyhidden">Wyczyść kod pocztowy</span></button>
+            <button type="button" id="postcode_reset" class="button button--rounded" title="Wyczyść kod pocztowy"><span class="icon icon--close" aria-hidden="true"></span><span class="visuallyhidden">Wyczyść kod pocztowy</span></button>
+            <button type="button" id="find_postcode" class="button button--link" title="Znajdź kod pocztowy">Znajdź kod pocztowy</button>
         </div>
     </div>
     <!-- Nawigacja z megamenu magento -->
@@ -137,9 +138,35 @@
             </a>
         </div>
     </aside>
-    <!-- TODO -->
-</main>
-
-<footer class="page-footer">
-    <!-- TODO -->
-</footer>
+    <section class="recommended">
+        <h2 class="visuallyhidden">Polecane produkty</h2>
+        <aside class="self-advertisement">
+            <header class="self-advertisment__header">
+                <h2 class="self-advertisment__title">Poczta Kwiatowa<sup>&reg;</sup> lider wysyłki kwiatów</h2>
+                <p class="self-advertisment__description">Ponad 3150 florystów w Polsce jest gotowych, by doręczyć Twój bukiet już w 3 godziny!</p>
+            </header>
+            <div class="self-advertisement__advantages">
+                <figure class="self-advertisement__advantage">
+                    <img src="" alt="" class="self-advertisement__image" aria-hidden="true">
+                    <figcaption class="self-advertisement__info">
+                        <p class="self-advertisement__text"><strong>Dołącz bilecik z życzeniami</strong> i&nbsp;napisz bliskim wiadomość!</p>
+                    </figcaption>
+                </figure>
+                <figure class="self-advertisement__advantage">
+                    <img src="" alt="" class="self-advertisement__image" aria-hidden="true">
+                    <figcaption class="self-advertisement__info">
+                        <p class="self-advertisement__text"><strong>Gwarancja dostawy</strong> w terminie i&nbsp;<strong>konkretnej porze</strong> doręczenia.</p>
+                    </figcaption>
+                </figure>
+                <figure class="self-advertisement__advantage">
+                    <img src="" alt="" class="self-advertisement__image" aria-hidden="true">
+                    <figcaption class="self-advertisement__info">
+                        <p class="self-advertisement__text"><strong>Potwierdzenie SMS</strong> i informacje o&nbsp;statusie Twojej przesyłki.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="recommended-products">
+                <div class="product">
+                    <a href="{link do karty produkty}" title="Zobacz {nazwa produktu}">
+                        <figure class="product__image-wrapper">
+                            <img src="" alt="" clas...
