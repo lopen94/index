@@ -1,0 +1,43 @@
+// ONLY IMPORTS HERE FUCKER
+// http://s2.quickmeme.com/img/b5/b5785782aa5515e15eedb8b446f4d4efb3865bb9a65b8945dac0f3377cc8f06e.jpg
+
+// utilities
+@import 'utilities/variables';
+
+// vendors
+
+// base
+@import 'base/typography';
+
+// layout
+@import 'layout/top-navigation';
+@import 'layout/header';
+@import 'layout/main-slider';
+@import 'layout/featured';
+@import 'layout/footer';
+
+// components
+@import 'components/buttons';
+@import 'components/categories';
+@import 'components/megamenu';
+@import 'components/product-thumbnail';
+
+//pages
+@import 'pages/home';
+@import 'pages/checkout';
+@import 'pages/contact';
+@import 'pages/product-page';
+@import 'pages/products-list';
+
+
+/////////////// C H W I L O W O ///////////////////
+body {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+/////////////////////////////////////////////////
