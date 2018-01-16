@@ -1,5 +1,5 @@
 .top-nav {
-	background-color: red;
+	background-color: rgba(0,0,0,0.15);
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -8,7 +8,13 @@
 .navigation-list__item {
 	display: inline-block;
 	margin-right: 15px;
-
+	vertical-align: middle;
+	&--icon {
+		width: 35px;
+		height: 35px;
+		cursor: pointer;
+		background-color: rgba(0,0,0,0.2);
+	}
 }
 .navigation-list__link {
 	color: #000;
