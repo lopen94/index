@@ -12,18 +12,18 @@
 		<nav class="top-nav">
 			<ul class="navigation-list">
 				<li class="navigation-list__item">
-					<a href="tel:226666666" class="navigation-list__link" aria-label="22. 666. 66. 66">
+					<a href="tel:226666666" class="link" aria-label="22. 666. 66. 66">
 						<span class="icon icon--phone" aria-hidden="true"></span>
 	                    <span class="visuallyhidden">Numer telefonu</span>22 666 66 66</a>
 				</li>
 				<li class="navigation-list__item">
-					<a href="#" class="navigation-list__link">Kontakt/Śledzenie Przesyłki</a>
+					<a href="#" class="link">Kontakt/Śledzenie Przesyłki</a>
 				</li>
 				<li class="navigation-list__item">
-					<a href="#" class="navigation-list__link">Rejestracja</a>
+					<a href="#" class="link">Rejestracja</a>
 				</li>
 				<li class="navigation-list__item navigation-list__item--login">
-					<a href="#" class="navigation-list__link">Logowanie</a>
+					<a href="#" class="link">Logowanie</a>
 				</li>
 				<!-- S E A R C H  B O X -->
 				<li class="navigation-list__item navigation-list__item--icon">
@@ -43,30 +43,50 @@
 		</nav> <!-- /.top-nav -->
 		<!-- P A G E  H E A D E R -->
 		<header class="header">
-			<a href="" class="header__link" title="Przejdź do strony głównej">
+			<div class="header__container header__container--images">
+				<a href="" class="header__link" title="Przejdź do strony głównej">
 				<figure class="header__image-wrapper">
 					<img src="" alt="" class="header__image logo">
 				</figure>
-			</a>
-			<a href="" class="header__link" title="Nasze nagrody">
-				<figure class="header__image-wrapper">
-					<img src="" alt="" class="header__image awards">
-				</figure>
-			</a>
-			<div class="postcodes-search">
-				<input type="tel" id="postcode" class="postcodes-search__input">
-				<button type="button" id="postcode_reset" class="button button--rounded">
-					<span class="icon icon--close" aria-hidden="true"></span>
-					<span class="visuallyhidden">Wyczyść kod pocztowy</span>
-				</button>
-				<a href="#" class="postcodes-search__link">Wyszukaj kod pocztowy</a>
+				</a>
+				<a href="" class="header__link" title="Nasze nagrody">
+					<figure class="header__image-wrapper">
+						<img src="" alt="" class="header__image awards">
+					</figure>
+				</a>
+			</div>
+			<div class="header__container header__container--postcodes-search">
+				<div class="header__elements-wrapper">
+					<div>
+						<input type="tel" id="postcode" class="input input--default">
+						<button type="button" id="postcode_reset" class="button button--close visuallyhidden">
+							<span class="icon icon--close" aria-hidden="true"></span>
+							<span class="visuallyhidden">Wyczyść kod pocztowy</span>
+						</button>
+						<a href="#" class="link link--pna">Wyszukaj kod pocztowy</a>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- P L A C E  M E G A M E N U  H E R E -->
 		<div class="slider">
-			<div class="slider__slide"></div>
-			<div class="slider__slide"></div>
-			<div class="slider__slide"></div>
+			<div class="slider__carousel">
+				<div class="slider__slide"></div>
+				<div class="slider__slide"></div>
+				<div class="slider__slide"></div>
+			</div>
+			<section class="counter-section">
+				<div class="counter-section__wrapper">
+					<img src="" alt="" class="counter-section__image" aria-hidden="true">
+					<h3 class="counter-section__header">Kwiaty na dziś ?</h3>
+					<p class="counter-section__description">Zamów w ciągu:</p>
+					<section class="counter">
+						<span class="counter__units counter__units--hours">88:</span>
+						<span class="counter__units counter__units--minutes">88:</span>
+						<span class="counter__units counter__units--seconds">88</span>
+					</section>
+				</div>
+			</section>
 		</div> <!-- /.slider -->
 		<section class="categories">
 			<a href="" class="categories__link" title="title 1">

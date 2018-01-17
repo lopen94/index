@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 5px;
+}
+.header__container {
+	flex-basis: 50%;
+}
+.header__elements-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}

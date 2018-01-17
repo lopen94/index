@@ -1,0 +1,20 @@
+.input {
+	width: $input_width;
+	height: $input_height;
+	box-sizing: border-box;
+	padding-left: 10px;
+	border-radius: 3px;
+	font-size: $input_desktop;
+	color: $input_text_gray;
+	&--default {
+		border: 1px solid $input_border_gray;
+	}
+	&--success {
+		border: 1px solid $input_border_gray;
+		background-color: $input_bg_green;
+	}
+	&--danger {
+		border: 1px solid $input_border_gray;
+		background-color: $input_bg_red;
+	}
+}

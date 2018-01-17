@@ -20,3 +20,13 @@
         white-space: inherit;
     }
 }
+.link {
+    text-decoration: none;
+    font-size: $nav_links;
+    color: #000;
+    &--pna {
+        color: $link_blue;
+        display: block;
+        font-size: $link_pna;
+    }
+}

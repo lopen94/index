@@ -1,16 +1,33 @@
-// SIZES
-$header_big: 24px;
-$header_big_mobile: 19px;
-$product_price: 17px;
-$product_price_mobile: 14px;
-$text_standard: 14px;
-$text_standard_mobile: 13px;
-$text_small: 11px;
-$nav_links: 15px;
-
-// COLORS
-$product_price_color: #08a000;
-$product_info_color: #555;
-
 // FONTS
 $main_font: 'Open Sans', sans-serif;
+
+// SIZES
+	// TYPOGRAPHY
+	$header_big: 24px;
+	$header_big_mobile: 19px;
+	$product_price: 17px;
+	$product_price_mobile: 14px;
+	$text_standard: 14px;
+	$text_standard_mobile: 13px;
+	$text_small: 11px;
+	$input_desktop: 14px;
+	$nav_links: 15px;
+	$link_pna: 11px;
+	$counter_units_text: 30px;
+
+	//ELEMENTS
+	$input_height: 35px;
+	$input_width: 250px;
+
+// COLORS
+	// TYPOGRAPHY
+	$input_text_gray: #555;
+	$link_blue: #004982;
+	$text_green: #199e25;
+
+	// INPUTS
+	$input_border_gray: #bbb;
+	$input_border_green: #199e25;
+	$input_border_red: #d80000;
+	$input_bg_green: #eff8f0;
+	$input_bg_red: #f7cccc;
