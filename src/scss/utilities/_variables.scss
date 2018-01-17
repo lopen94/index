@@ -1,6 +1,5 @@
 // FONTS
 $main_font: 'Open Sans', sans-serif;
-
 // SIZES
 	// TYPOGRAPHY
 	$header_big: 24px;
@@ -9,6 +8,7 @@ $main_font: 'Open Sans', sans-serif;
 	$product_price_mobile: 14px;
 	$text_standard: 14px;
 	$text_standard_mobile: 13px;
+	$description_small: 13px;
 	$text_small: 11px;
 	$input_desktop: 14px;
 	$nav_links: 15px;
@@ -18,16 +18,14 @@ $main_font: 'Open Sans', sans-serif;
 	//ELEMENTS
 	$input_height: 35px;
 	$input_width: 250px;
-
+	
 // COLORS
-	// TYPOGRAPHY
 	$input_text_gray: #555;
 	$link_blue: #004982;
 	$text_green: #199e25;
-
-	// INPUTS
 	$input_border_gray: #bbb;
 	$input_border_green: #199e25;
 	$input_border_red: #d80000;
 	$input_bg_green: #eff8f0;
 	$input_bg_red: #f7cccc;
+	$pk_lightgray: #999;
