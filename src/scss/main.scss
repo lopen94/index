@@ -7,21 +7,22 @@
 // vendors
 
 // base
+@import 'base/reset';
 @import 'base/typography';
 @import 'base/general';
 
 // layout
-@import 'layout/top-navigation';
 @import 'layout/header';
 @import 'layout/featured';
 @import 'layout/footer';
+@import 'layout/top-navigation';
+@import 'layout/categories';
+@import 'layout/megamenu';
+@import 'layout/main-slider';
 
 // components
 @import 'components/buttons';
-@import 'components/categories';
-@import 'components/megamenu';
 @import 'components/product-thumbnail';
-@import 'components/main-slider';
 @import 'components/inputs';
 
 //pages
