@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- T O P  N A V I G A T I O N -->
+        <nav class="top-nav">
+            <ul class="navigation-list">
+                <li class="navigation-list__item">
+                    <a href="tel:226666666" class="link" aria-label="22. 666. 66. 66">
+                        <span class="icon icon--phone" aria-hidden="true"></span>
+                        <span class="visuallyhidden">Numer telefonu</span>22 666 66 66</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#" class="link">Kontakt/Śledzenie Przesyłki</a>
+                </li>
+                <li class="navigation-list__item">
+                    <a href="#" class="link">Rejestracja</a>
+                </li>
+                <li class="navigation-list__item navigation-list__item--login">
+                    <a href="#" class="link">Logowanie</a>
+                </li>
+                <!-- S E A R C H  B O X -->
+                <li class="navigation-list__item navigation-list__item--icon">
+                    <span class="icon icon--search" aria-hidden="true"></span>
+                    <span class="visuallyhidden">Wyszukiwarka</span>
+                    <form method="get" id="search-box">
+                        <!-- <input class="search-box__input" type="text" placeholder="Szukaj" aria-label="Szukaj"> -->
+                    </form>
+                </li>
+                <li class="navigation-list__item navigation-list__item--icon">
+                    <a href="#" class="top-nav__link">
+                        <span class="icon icon--basket" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <!-- CZEKAMY NA WIDOK KOSZYKA -->
+            </ul>
+        </nav> <!-- /.top-nav -->
+        <!-- P A G E  H E A D E R -->
+        <header class="header">
+            <div class="header__container header__container--images">
+                <a href="" class="header__link" title="Przejdź do strony głównej">
+                    <figure class="header__image-wrapper">
+                        <img src="" alt="" class="header__image logo">
+                    </figure>
+                </a>
+                <a href="" class="header__link" title="Nasze nagrody">
+                    <figure class="header__image-wrapper">
+                        <img src="" alt="" class="header__image awards">
+                    </figure>
+                </a>
+            </div>
+            <div class="header__container header__container--postcodes-search">
+                <div class="header__elements-wrapper">
+                    <div>
+                        <input type="tel" id="postcode" class="input input--default">
+                        <button type="button" id="postcode_reset" class="button button--close visuallyhidden">
+                            <span class="icon icon--close" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Wyczyść kod pocztowy</span>
+                        </button>
+                        <a href="#" class="link link--pna">Wyszukaj kod pocztowy</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="megamenu-placeholder" style="height: 50px;">
+            <h1 class="menu">MENU MENU MENU MENUMENU MENU MENU MENUMENU MENU MENU MENUMENU MENU MENU</h1>
+        </div>
+        <div class="category">
+            <div class="category__header">
+                <h1 class="category__title">NAZWA KATEGORII</h1>
+                <p>opisopisopisopsipsiadasdasd</p>
+            </div>
+            <div class="category__image">
+                <img src="../category.png">
+            </div>
+        </div>
+        <hr>
+        <section class="toolbar">
+            <div class="sort-title"></div>
+                <label>Filtrowanie</label>
+                <label>Sortowanie</label>
+            <div class="toolbar__sorter">
+                <div class="toolbar__sort-by">
+                    <select class="sort-element">
+                        <option class="select-sort-filter">
+                            Data dostawy
+                        </option>
+                    </select>
+                </div>
+                <div class="toolbar__sort-by">
+                    <input type="tel" id="postcode" class="input input--default">
+                    <button type="button" id="postcode_reset" class="button button--close visuallyhidden">
+                        <span class="icon icon--close" aria-hidden="true"></span>
+                        <span class="visuallyhidden">Wyczyść kod pocztowy</span>
+                    </button>
+                    <a href="#" class="link link--pna">Wyszukaj kod pocztowy</a>
+                </div>
+                <div class="toolbar__sort-by">
+                    <label class="sort-title"></label>
+                    <select class="sort-element">
+                        <option class="select-sort-filter">
+                            Produkt zawiera
+                        </option>
+                    </select>
+                </div>
+                <div class="toolbar__sort-by">
+                    <label class="sort-title">Sortowanie</label>
+                    <select class="sort-element">
+                        <option class="select-sort-filter">
+                            Wg. popularności
+                        </option>
+                    </select>
+                </div>
+                <div class="toolbar__mode-view">
+                    <li class="toolbar_view-mode toolbar_view-mode--icon">
+                        <span class="icon icon--mode" aria-hidden="true"></span>
+                    </li>
+                    <li class="toolbar_view-mode toolbar_view-mode--icon">
+                        <span class="icon icon--mode" aria-hidden="true"></span>
+                    </li>
+                    <li class="toolbar_view-mode toolbar_view-mode--icon">
+                        <span class="icon icon--mode" aria-hidden="true"></span>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <a href="" class="categories__link" title="title 1">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa1</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 2">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa2</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 3">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa3</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 4">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa4</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 5">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa5</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 6">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa6</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 7">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa7</figcaption>
+                </figure>
+            </a>
+            <a href="" class="categories__link" title="title 8">
+                <figure class="categories__element">
+                    <img src="" alt="" class="categories__image" aria-hidden="true">
+                    <figcaption class="categories__image-title">dupa8</figcaption>
+                </figure>
+            </a>
+        </section> <!-- /.categories -->
+        <section class="featured">
+            <article class="featured__article">
+                <h2 class="visuallyhidden">dupa</h2>
+                <p class="featured__caption">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, dolorem!
+                </p>
+                <div class="featured__links">
+                    <figure class="featured__figure">
+                        <img src="" alt="" class="featured__image" aria-hidden="true">
+                        <figcaption class="featured__info"><strong>strong text</strong> rest of caption</figcaption>
+                    </figure>
+                    <figure class="featured__figure">
+                        <img src="" alt="" class="featured__image" aria-hidden="true">
+                        <figcaption class="featured__info"><strong>strong text</strong> rest of caption</figcaption>
+                    </figure>
+                    <figure class="featured__figure">
+                        <img src="" alt="" class="featured__image" aria-hidden="true">
+                        <figcaption class="featured__info"><strong>strong text</strong> rest of caption</figcaption>
+                    </figure>
+                </div> <!-- /.featured__links -->
+            </article>
+            <section class="featured-items">
+                <!-- 3  R E C O M M E N D E D  P R O D U C T S  H E R E -->
+                <!-- <figure class="featured__product"></figure> -->
+            </section> <!-- /.featured-items -->
+        </section><!-- /.featured -->
+        <section class="reviews">
+            <h3 class="reviews__header header-underline">Opinie</h3>
+            <figure class="reviews__opinion">
+                <img src="" alt="" class="reviews__rating">
+                <figcaption class="reviews__message">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a temporibus eveniet error pariatur est?
+                </figcaption>
+                <span class="reviews__author">06.06.06 Andrzej</span>
+            </figure>
+        </section> <!-- /.reviews -->
+        <form action="post" class="newsletter">
+            <input type="email" class="newsletter__input">
+            <button class="newsletter__button" type="submit"></button>
+        </form> <!-- /.newsletter -->
+        <footer class="footer">
+            <section class="footer__section footer__section--contact">
+                <a href="tel:6666666">666 66 66</a>
+                <a href="mailto:dupa@cycki.pl?subject=dupa">dupa@cycki.pl</a>
+                <p class="contact-details">
+                    pk sp z o.o. <br>
+                    ul. jakastam 66/6 <br>
+                    pn-ndz: 88:88
+                </p>
+                <section class="social-media">
+                    <a href="#" target="_blank" class="social-media__link social-media__link--fb"></a>
+                    <a href="#" target="_blank" class="social-media__link social-media__link--gplus"></a>
+                    <a href="#" target="_blank" class="social-media__link social-media__link--yt"></a>
+                    <a href="#" target="_blank" class="social-media__link social-media__link--ig"></a>
+                </section> <!-- /.social-media -->
+            </section> <!-- /.contact -->
+            <section class="footer__section footer__section--info">
+                <h3 class="footer__header">Info</h3>
+                <ul class="footer__links">
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                </ul>
+            </section> <!-- /info -->
+            <section class="footer__section footer__section--pk">
+                <h3 class="footer__header">Poczta Kwiatowa</h3>
+                <ul class="footer__links">
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                </ul>
+            </section>	<!-- /pk -->
+            <section class="footer__section footer__section--offer">
+                <h3 class="footer__header">Oferta</h3>
+                <ul class="footer__links">
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer_link" aria-label="jakistam label">link</a>
+                    </li>
+                </ul>
+            </section> <!-- /offer -->
+        </footer>
+        <section class="bottom-description">
+            <article class="bottom-description__article">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestiae officiis expedita, esse alias corporis qui, amet. Veniam et recusandae alias cum incidunt facere, dolorum ducimus ab magni ex mollitia?
+            </article>
+            <article class="bottom-description__article">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel accusamus voluptates nostrum, hic illo alias, maxime porro blanditiis odit quasi laboriosam eaque eum, at, reprehenderit ea suscipit quam modi? Temporibus.
+            </article>
+        </section> <!-- /.bottom-description -->
+    </div>
+</body>
+</html>

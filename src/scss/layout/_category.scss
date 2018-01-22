@@ -1,0 +1,59 @@
+.category
+{
+  display: flex;
+}
+.category__image {
+  padding-left: 300px;
+}
+.sort-element{
+  width: 200px;
+  height: 35px;
+}
+.toolbar__sort-by
+{
+  margin-left: 25px;
+}
+.toolbar__sorter {
+  display: flex;
+}
+.sort-title
+{
+  display: flex;
+}
+.toolbar_view-mode{
+display: inline-block;
+margin-right: 1px;
+vertical-align: middle;
+&--icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+}
+.categories
+{
+  display: flex;
+  margin: 30px;
+}
+.categories__element
+{
+  margin: 30px;
+}
+.megamenu-placeholder
+{
+  background-color: rgba(245, 245, 245, 0.85);
+  margin: 5px;
+  width: 100%;
+}
+.menu{
+  padding: 20px;
+}
+.footer{
+  display: flex;
+  background-color: rgba(187, 187, 187, 0.85);
+}
+.toolbar__mode-view
+{
+  margin-left: 80px;
+}
