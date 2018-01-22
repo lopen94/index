@@ -82,11 +82,11 @@
         </div>
         <hr>
         <section class="toolbar">
-                <label class="sort-title_left">Filtrowanie</label>
-                <label class="sort-title_right">Sortowanie</label>
+                <a class="sort-title_left">Filtrowanie</a>
+                <a class="sort-title_right">Sortowanie</a>
             <div class="toolbar__sorter">
                 <div class="toolbar__sort-by">
-                    <select class="sort-element">
+                    <select class="input input--default">
                         <option class="select-sort-filter">
                             Data dostawy
                         </option>
@@ -102,17 +102,20 @@
                 </div>
                 <div class="toolbar__sort-by">
                     <label class="sort-title"></label>
-                    <select class="sort-element">
-                        <option class="select-sort-filter">
-                            Produkt zawiera
-                        </option>
+                    <select class="input input--default">
+                        <option class="select-sort-filter">Produkt zawiera</option>
+                        <option class="select-sort-filter">Alkohol</option>
+                        <option class="select-sort-filter">Czekoladki</option>
+                        <option class="select-sort-filter">Koszyk</option>
+                        <option class="select-sort-filter">Indywidualny grawer</option>
+                        <option class="select-sort-filter">Inna cecha X</option>
                     </select>
                 </div>
                 <div class="toolbar__sort-by">
-                    <select class="sort-element">
-                        <option class="select-sort-filter">
-                            Wg. popularności
-                        </option>
+                    <select class="input input--default">
+                        <option class="select-sort-filter">Wg. popularności</option>
+                        <option class="select-sort-filter">Cena rosnąco</option>
+                        <option class="select-sort-filter">Cena malejąco</option>
                     </select>
                 </div>
                 <div class="toolbar__mode-view">
@@ -214,10 +217,6 @@
                 <span class="reviews__author">06.06.06 Andrzej</span>
             </figure>
         </section> <!-- /.reviews -->
-        <form action="post" class="newsletter">
-            <input type="email" class="newsletter__input">
-            <button class="newsletter__button" type="submit"></button>
-        </form> <!-- /.newsletter -->
         <footer class="footer">
             <section class="footer__section footer__section--contact">
                 <a href="tel:6666666">666 66 66</a>
