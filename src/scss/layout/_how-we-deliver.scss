@@ -1,0 +1,21 @@
+.how-we-deliver {
+	display: flex;
+	flex-wrap: wrap;
+	height: 300px;
+	margin: 40px 0;
+	&__player {
+		flex-basis: 50%;
+		box-sizing: border-box;
+		border-right: 1px solid $pk_lightgray_underline;
+	}
+	&__caption {
+		flex-basis: 50%;
+		height: 90%;
+		box-sizing: border-box;
+		padding: 0 45px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-self: center;
+	}
+}

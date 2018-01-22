@@ -1,0 +1,25 @@
+.reviews {
+	display: flex;
+	height: 150px;
+	width: 100%;
+	margin-top: 10px;
+	.reviews__opinion {
+		width: 30%;
+		margin-top: 10px;
+		margin-right: 3%;
+		font-size: $text_standard;
+		line-height: 18px;
+		&:first-child {
+			margin-left: 10px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.reviews__author {
+		color: $pk_lightgray_text;
+		font-size: $text_small;
+		display: block;
+		margin-top: 10px;
+	}
+}

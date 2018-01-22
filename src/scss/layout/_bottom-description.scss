@@ -1,0 +1,11 @@
+.bottom-description {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__article {
+		flex-basis: 49%;
+		line-height: 18px;
+		font-size: $text_small;
+	}
+}
